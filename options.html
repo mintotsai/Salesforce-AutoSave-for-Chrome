@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Jasmine Salesforce AutoSave for Chrome</title>
+    <link rel="shortcut icon" type="image/png" href="images/favicon.ico"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <style>
+      body {
+        padding-top: 20px;
+        padding-bottom: 20px;
+      }
+      .header {
+        margin-bottom: 30px;
+      }
+      .container {
+        max-width: 730px;
+      }
+      .marketing {
+        margin: 40px 0;
+      }
+      .footer {
+        padding-top: 19px;
+        color: #777;
+        border-top: 1px solid #e5e5e5;
+      }
+      #jaz-save {
+        margin-top: 300px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header clearfix">
+        <img src="images/jasmine.png"/>
+      </div>
+      <div class="row marketing">
+        <div id="jaz-messages" class="alert alert-success" role="alert">Your settings are saved.</div>
+        <form id="jaz-form">
+          <div class="col-lg-6">
+            <h4>Auto Save Frequency (minutes):</h4>
+            <button id="jaz-save" type="button" class="btn btn-success">Save</button>
+          </div>
+          <div class="col-lg-6">
+            <div class="form-group">
+            <input id="jaz-auto-save-freq" name="jaz-auto-save-freq" type="text" class="form-control"/>
+          </div>
+          </div>
+        </form>
+      </div>
+      <footer class="footer">
+        <p>&copy; 2015 <a target="_blank" href="https://jasminepm.com">Jasmine Software, LLC</a></p>
+      </footer>
+    </div>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/options.js"></script>
+  </body>
+</html>
